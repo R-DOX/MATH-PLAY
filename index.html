@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATH-PLAY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="png">
+</head>
+<body>
+   
+    <div class="main-container">
+        <div class="main-box">
+            <h1>MATH-PLAY</h1>
+            <div id="score" class="score-box">Score: 0</div>
+            <div class="box2">
+                <label for="mode">Select Mode:</label>
+                <select id="mode" class="intext11">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <div class="show-answer">
+                <span id="question">Loading question...</span>
+            </div>
+            <div class="box1">
+                <div class="box-col">
+                    <input type="text" id="userAnswer" class="intext11" placeholder="Your answer">
+                </div>
+            </div>
+            <div class="box2 center-btn">
+                <button class="btn" onclick="checkAnswer()">Submit</button>
+                <button class="btn skip-btn" onclick="skipQuestion()">Skip</button>
+            </div>
+            <div class="box2">
+                <input type="text" id="result" placeholder="Result" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
